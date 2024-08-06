@@ -11,6 +11,7 @@ header i {margin-left: 10px;}
 aside{grid-area: b;}
 main{grid-area: c;}
 footer{grid-area: d; background-color: rgb(26, 26, 82); color: white;}
+.Last{display: flex; flex-wrap: nowrap; align-items: center; width: 100vw;}
 footer i{margin-inline: 20px;}
 .container{display: none; background-color: rgb(77, 77, 202); color: white; min-height: 100vh;}
 .main-container{display: grid;
@@ -32,4 +33,11 @@ footer i{margin-inline: 20px;}
         grid-auto-rows: 400px;
         gap: 5px; justify-content: center; max-height:70vh;} 
 
+}
+@media(max-width:576px){
+    .grid-container{grid-template-areas: "a"                                        
+                                         "c"
+                                         "d";}
+    .card {max-width: 87vw;}                                         
+    .card img {max-width: 100%; max-height: auto;}
 }
