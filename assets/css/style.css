@@ -10,14 +10,15 @@ header i {margin-left: 10px;}
 .First{display: flex; flex-wrap: nowrap; align-items: center; width: 100vw;}
 aside{grid-area: b;}
 main{grid-area: c;}
-footer{grid-area: c;}
+footer{grid-area: d; background-color: rgb(26, 26, 82); color: white;}
+footer i{margin-inline: 20px;}
 .container{display: none; background-color: rgb(31, 31, 197); color: white;}
 
-/*@media(min-width: 576px) {
+@media(min-width: 576px) {
     .container {
         display: flex;
         height: auto;
     }
     
     .categorias{display: flex; flex-wrap: wrap; flex-direction: column; margin-bottom: 30px; margin-top: 10px;}
-}/*
+}
