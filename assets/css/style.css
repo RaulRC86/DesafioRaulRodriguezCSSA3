@@ -1,2 +1,23 @@
-.grid-container{display: grid;}
-aside{display: none;}
+html{margin: 0;}
+.grid-container{height: 100vh; display: grid;
+    grid-template-areas: "a a a a"
+                         "b c c c"
+                         "b c c c"
+                         "d d d d"; }
+header{grid-area: a; background-color: rgb(75, 75, 185); color: white;padding: 10px;}
+header p{font-size: 30px; padding-left: 20px;}
+header i {margin-left: 10px;}
+.First{display: flex; flex-wrap: nowrap; align-items: center; width: 100vw;}
+aside{grid-area: b;}
+main{grid-area: c;}
+footer{grid-area: c;}
+.container{display: none; background-color: rgb(31, 31, 197); color: white;}
+
+/*@media(min-width: 576px) {
+    .container {
+        display: flex;
+        height: auto;
+    }
+    
+    .categorias{display: flex; flex-wrap: wrap; flex-direction: column; margin-bottom: 30px; margin-top: 10px;}
+}/*
